@@ -1,0 +1,32 @@
+.paginado{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    padding: 10px;
+}
+
+.listaPaginado{
+    margin: 8px;
+    list-style: none;
+}
+
+.btnPaginado{
+    transition: all 300ms;
+    height: 20px;
+    width: 18px;
+    border-radius: 12px;
+    background-color: rgba(75, 198, 247, 0.445);
+    color: rgba(0, 0, 0, 0.507);
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid rgb(69, 2, 95);
+    -webkit-text-stroke: 1px;
+}
+
+.btnPaginado:hover{
+    transform: scale(1.1);
+    background-color: rgba(243, 243, 230, 0.486);
+    color: rgb(137, 18, 161);
+    border: 2px solid rgb(7, 7, 14);
+}

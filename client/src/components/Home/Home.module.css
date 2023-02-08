@@ -1,0 +1,83 @@
+.divCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-decoration: none;
+    row-gap: 50px;
+    margin-top:50px;
+}
+
+.imgBack{
+    /*background-image: url(https://previews.123rf.com/images/vitaliyvill/vitaliyvill1706/vitaliyvill170600007/79853805-cartoon-game-background-fondo-transparente-para-juegos-de-aplicaciones-m%C3%B3viles-y-computadoras-ilustr.jpg);*/
+    background-image: url(https://i.pinimg.com/originals/05/10/f4/0510f4e596283c0d961e4338565a93f3.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size:100% 100% ;
+    min-height: 100%;
+}
+
+.btnCrear{
+    border-radius: 9px;
+    display: flex;
+    width: 100px;
+    height: 45px;
+    color: black;
+    border: 2.5px solid black;
+    -webkit-text-stroke: 1px;
+    background-color: rgba(95, 240, 228, 0.445);
+    transition-duration: 0.4s;
+    margin-left: 620px;
+    text-decoration: none;
+}
+
+.btnCrear:hover{
+    background-color: rgba(243, 243, 230, 0.486);
+    color: rgb(137, 18, 161);
+    border: 2px solid rgb(7, 7, 14);
+}
+
+
+.divFiltros{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin-left: 150px;
+    -webkit-text-stroke: 1px;
+}
+
+.filterSort{
+    background-color:  rgba(75, 198, 247, 0.445);
+    border-radius: 12px;
+    background-color: rgba(75, 198, 247, 0.445);
+    color: rgba(0, 0, 0, 0.507);
+    cursor: pointer;
+    padding: 10px;
+    border: 2px solid rgb(69, 2, 95);
+}
+.filterSort:hover{
+    transform: scale(1.1);
+    background-color: rgba(243, 243, 230, 0.486);
+    color: rgb(137, 18, 161);
+    border: 2px solid rgb(7, 7, 14);
+}
+
+.spanFO{
+    color: aliceblue;
+    text-shadow: 4px 4px 8px black;
+}
+
+.LinkCard{
+    text-decoration: none;
+    color:black;
+    max-width: 250px;
+    max-height: 450px;
+    align-self: center;
+    margin:auto;
+}
+
+.loading{
+    justify-content: center;
+    display: flex;
+    align-items: flex-start;
+}

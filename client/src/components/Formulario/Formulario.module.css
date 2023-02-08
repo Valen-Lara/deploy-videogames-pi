@@ -1,0 +1,93 @@
+.divPlatform{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+    width: 80vw;
+    margin: auto;
+}
+
+.inputs{
+    width: 300px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+.inputs:focus{
+    outline: none;
+}
+.errorInput{
+    border: 2px solid red;
+}
+
+.divGenres{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: left;
+    width: 80vw;
+    margin: auto; 
+}
+
+textarea {
+    resize: none;
+    width: 400px;
+    height: 100px; 
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: rgba(230, 64, 133, 0.596);
+    border: 1px solid rgb(0, 0, 0);
+    color: white;
+    padding: 5px;
+}
+
+.backImg{
+    background-image: url(https://cdn.pixabay.com/photo/2020/03/22/06/57/game-background-4956017_960_720.jpg);
+}
+
+.labelShadow{
+    color: aliceblue;
+    text-shadow: 4px 4px 8px black;
+}
+
+.labelPlatform{
+    background-color: rgba(0, 255, 255, 0.479);
+    margin-top: 20px;
+    margin-left: 35%;
+    margin-bottom: 15px;
+    width: 30%;
+    font-size: larger;
+}
+
+.selectCheck{
+    background-color: rgba(153, 155, 160, 0.801);
+}
+
+.createbtn{
+    background-color: green;
+    font-size: medium;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.backBtn{
+    border-radius: 9px;
+    display: flex;
+    width: auto;
+    height: auto;
+    color: black;
+    border: 2.5px solid black;
+    -webkit-text-stroke: 1px;
+    background-color: rgba(95, 240, 228, 0.445);
+    transition-duration: 0.4s;
+    margin-left: 620px;
+    font-size: 20px;
+    margin-left:20px;
+}
+.backBtn:hover{
+    background-color: rgba(243, 243, 230, 0.486);
+    color: rgb(137, 18, 161);
+    border: 2px solid rgb(7, 7, 14);
+}
+
+.linkBckBtn{
+    text-decoration: none;
+}
