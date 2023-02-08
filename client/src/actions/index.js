@@ -6,7 +6,7 @@ export function getVideogames() {
   return async function (dispatch) {
     dispatch(loading());
     try {
-      var json = await axios.get("http://localhost:3001/videogames");
+      var json = await axios.get("/videogames");
       return dispatch({
         type: "GET_VIDEOGAMES",
         payload: json.data,
@@ -24,7 +24,7 @@ export function getVideogames() {
 export function getPlatforms() {
   return async function (dispatch) {
     try {
-      var json = await axios.get("http://localhost:3001/platforms");
+      var json = await axios.get("/platforms");
       return dispatch({
         type: "GET_PLATFORMS",
         payload: json.data,
@@ -40,8 +40,8 @@ export function getVideogameName(name) {
     dispatch(loading());
     try {
       var json = await axios.get(
-        `http://localhost:3001/videogames?name=${name}`
-        //`http://localhost:3001/videogames/${name}`
+        `/videogames?name=${name}`
+        //`/videogames/${name}`
       );
       return dispatch({
         type: "GET_VIDEOGAMES_NAME",
@@ -60,7 +60,7 @@ export function getVideogameName(name) {
 export function getGenres() {
   return async function (dispatch) {
     try {
-      var genre = await axios.get("http://localhost:3001/genres");
+      var genre = await axios.get("/genres");
       return dispatch({
         type: "GET_GENRES",
         payload: genre.data,
@@ -75,7 +75,7 @@ export function postVideogame(payload) {
   //sino guardar el await en una constante y retornarlo
   return async function (dispatch) {
     try {
-      await axios.post("http://localhost:3001/videogames", payload);
+      await axios.post("/videogames", payload);
       return true;
     } catch (error) {
       console.log(error);
@@ -87,7 +87,7 @@ export function postVideogame(payload) {
 export function getDetail(id) {
   return async function (dispatch) {
     try {
-      var json = await axios.get(`http://localhost:3001/videogames/${id}`);
+      var json = await axios.get(`/videogames/${id}`);
       return dispatch({
         type: "GET_DETAIL",
         payload: json.data,

@@ -21,6 +21,8 @@ const server = require("./src/app.js");
 const { loadGenres, getApiInfo } = require("./src/controllers/controllers.js");
 const { conn } = require("./src/db.js");
 const force = false;
+require("dotenv").config();
+const { PORT } = process.env;
 
 // Syncing all the models at once.
 conn.sync({ force: force }).then(async () => {
@@ -28,6 +30,6 @@ conn.sync({ force: force }).then(async () => {
   if (genres) console.log("Genres loaded");
   if (force) await getApiInfo(); //force true or false
   server.listen(3001, () => {
-    console.log("%s listening at 3001"); // eslint-disable-line no-console
+    console.log("%s listening at", 3001); // eslint-disable-line no-console
   });
 });
