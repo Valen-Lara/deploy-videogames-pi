@@ -104,7 +104,7 @@ export default function VideoGameCreate() {
       } else delete errorsCopy.genres;
     }
 
-    console.log(Object.values(errorsCopy));
+    //console.log(Object.values(errorsCopy));
     if (Object.keys(errorsCopy).length > 0) {
       //object.key me devuelve el nombre de la propiedad en un array
       setErrors(errorsCopy);

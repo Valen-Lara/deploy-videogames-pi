@@ -29,7 +29,7 @@ conn.sync({ force: force }).then(async () => {
   const genres = await loadGenres();
   if (genres) console.log("Genres loaded");
   if (force) await getApiInfo(); //force true or false
-  server.listen(3001, () => {
-    console.log("%s listening at", 3001); // eslint-disable-line no-console
+  server.listen(PORT, () => {
+    console.log("%s listening at", process.env.PORT); // eslint-disable-line no-console
   });
 });
